@@ -28,7 +28,9 @@ EXT_MAP = {
     'Other': []
 }
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s : %(message)s')
+logging.basicConfig(filename="logs/organizer.log", level=logging.INFO,
+                    format="%(asctime)s - %(levelname)s - %(message)s")
+
 
 def classify(ext:str):
     ext = ext.lower()
